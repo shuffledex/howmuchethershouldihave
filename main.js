@@ -6,7 +6,7 @@ $(function() {
         let address = $('#address').val();
         if (address != "") {
             updateText('calculated...');
-            $.when(request(`http://api.etherscan.io/api?module=account&action=txlist&address=${address}&startblock=0&endblock=99999999&sort=asc&apikey=8KKX8B6QS2MC68DBTEVXUZJDJGAFXCJYAH`)).then(
+            $.when(request(`https://api.etherscan.io/api?module=account&action=txlist&address=${address}&startblock=0&endblock=99999999&sort=asc&apikey=8KKX8B6QS2MC68DBTEVXUZJDJGAFXCJYAH`)).then(
                 function(data) {
                     if (data.status != "0") {
                         let filter = _.filter(data.result, function(o) {
