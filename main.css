@@ -1,0 +1,19 @@
+.row h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 100px 0 50px 0;
+}
+
+.value.row {
+    text-align: center;
+}
+
+.value h2 {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.wtf.row {
+    margin: 50px 0;
+    text-align: center;
+}
